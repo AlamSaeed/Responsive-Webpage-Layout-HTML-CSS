@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        body{
+            line-height: 1.5;
+        }
+        .container{
+            width: 100%;
+            padding: 5%;
+            background: rgb(246, 242, 242);
+        }
+        .row{
+            width:100%;
+            display: flex;
+            flex-wrap:wrap;
+        }
+        .column{
+            width: 25%;
+            padding: 0 20px;
+            text-align: justify;
+
+        }
+        .image{
+            height:200px; 
+            width:100%;
+        }
+        h1{
+            margin: 2% 2% 2% 2%;
+        }
+        .fig{
+            margin-left: 5%;
+        }
+        p,h2{
+            margin: 5% 5% 5% 5%;
+        }
+        span{
+            color: red;
+        }
+        @media screen and (max-width:768px){
+            .tablet{
+                width:50%;
+                color:brown;
+            }
+        }
+
+        @media screen and (max-width:576px){
+            .mobile{
+                width:100%;
+                color:blue;
+            }
+        }
+        .last{
+            margin: 5% 5% 5% 5%;
+            display: flex;
+            justify-content: space-between;
+        }
+        .con1{
+            color :red;
+        }
+        .con2{
+            justify-content: space-between;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1><span>Popular</span> Cources</h1>
+    <div class="container">
+        <div class="row">
+            <div class="column tablet mobile">
+            <img class="image" src="img1.jpg" alt="">
+            <figcaption class="fig">Classes&nbsp;&nbsp;&nbsp;&nbsp;10 am - 11 am</figcaption>
+            <h2>Philospphy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <div class="last">
+                <div class="con1">$20.00</div>
+                <div class="con2"><i class="fa fa-group"></i>&nbsp;200&nbsp;&nbsp;<i class="fa fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="column tablet mobile">
+            <img class="image" src="img2.jpg" alt="">
+            <figcaption class="fig">Classes&nbsp;&nbsp;&nbsp;&nbsp;10 am - 11 am</figcaption>
+            <h2>IELTS</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <hr>
+            <div class="last">
+                <div class="con1">$20.00</div>
+                <div class="con2"><i class="fa fa-group"></i>&nbsp;200&nbsp;&nbsp;<i class="fa fa-heart"></i></div>
+            </div>
+            
+        </div>
+        <div class="column tablet mobile">
+            <img class="image" src="img3.jpg" alt="">
+            <figcaption class="fig">Classes&nbsp;&nbsp;&nbsp;&nbsp;10 am - 11 am</figcaption>
+            <h2>Regular MBA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            <hr>
+            <div class="last">
+                <div style="color: green;">FREE</div>
+                <div class="con2"><i class="fa fa-group"></i>&nbsp;200&nbsp;&nbsp;<i class="fa fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="column tablet mobile">
+            <img class="image" src="img4.jpg" alt="">
+            <figcaption class="fig">Classes&nbsp;&nbsp;&nbsp;&nbsp;10 am - 11 am</figcaption>
+            <h2>GMAT</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+            <hr>
+            <div class="last">
+                <div class="con1">$20.00</div>
+                <div class="con2"><i class="fa fa-group"></i>&nbsp;200&nbsp;&nbsp;<i class="fa fa-heart"></i></div>
+            </div>
+
+        </div>        
+        </div>
+    </div>
+</body>
+</html>
